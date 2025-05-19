@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    
+}
+.background{
+    background-image:url(image/background\ wallpaper2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.container{
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img{
+    width:50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style-type: none;
+    margin:10px;
+    color: gold;
+    cursor: pointer;
+}
+nav ul li:hover{
+    font-size: 15px;
+    color: beige;
+}
+
+.head-button{
+    display: flex;
+}
+.head-button #btn1{
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: gold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.head-button #btn1:hover{
+    font-size:15px ;
+}
+.head-button #btn1 svg{
+    margin-right: 5px;
+}
+.head-button #btn2{
+    padding: 10px 20px;
+    border:none ;
+    background-color:bisque;
+    color: black;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.head-button #btn2:hover{
+    font-size: 14px;
+    background-color: goldenrod;
+    color: blanchedalmond;
+}
+
+main{
+    width: 50%;
+    margin: 50px 0px;
+    padding: 30px 0px;
+}
+main h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(220, 187, 1);
+    margin: 0px;
+}
+main h1 span{
+    background: #CFB300;
+    background: linear-gradient(to right, #CFB300 0%, #640A09 100%);
+    background-clip: text ;
+    color: transparent;
+}
+
+main p{
+    max-width:500px;
+    line-height: 25px;
+    font-size: 15px;
+    color:bisque;
+    
+}
+.main-button{
+    margin: 30px auto;
+    display: flex;
+}
+.main-button #btn1{
+    padding: 10px 30px;
+    border:none ;
+    background:linear-gradient(to right, #CFB300 0%, #640A09 50%);
+    color: bisque;
+    border-radius:5px ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.main-button #btn1:hover{
+    font-weight: 700;
+    font-size: 15px;
+}
+.main-button #btn2{
+    padding: 10px 25px;
+    background-color:transparent;
+    color: bisque;
+    border-radius:5px ;
+    display: flex;
+    align-items: center;
+}   
+.main-button #btn2:hover{
+    font-weight: 700;
+    font-size: 13px;
+    color: #CFB300;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid black;
+    width: 70%;
+    margin: 50px auto 20px;
+    border-radius: 5px;
+    box-shadow: -2px -5px 8px 0px rgba(0,0,0,0.7);
+    color: beige;
+}
+.footer-content{
+    margin: 10px 20px;
+}
+.footer-content h3{
+    font-size: 30px;
+}
+.footer-content p{
+    font-size: 12px;
+    text-align: center;
+    color: beige;
+}
+
+/* RESPONSIVENESS */
+@media (min-width:993px) {
+    .hamburger-icon{
+        display: none;
+    }
+}
+@media(max-width:992px){
+    nav{
+        display: none;
+    }
+    .head-button{
+        display: none;
+    }
+    .background{
+    background-image:url(image/background\ wallpaper\ mobile.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    }
+    .container{
+        width: 100%;
+        padding: 15px ;
+        height: 100vh;
+    }
+    .header{
+        margin: auto;
+        width: 95%;
+    }
+    main{
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    }
+    main p{
+    margin: auto;
+    padding-top: 10px;
+    }
+    .main-button button{
+    margin: 30px auto;
+    display: block;
+    }
+    .main-button #btn2{
+    padding: 10px 30px;
+    border:none ;
+    background:linear-gradient(to right, #CFB300 0%, #640A09 50%);
+    }  
+    footer{
+        margin: auto;
+    }
+}
