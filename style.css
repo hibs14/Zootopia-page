@@ -1,14 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh; 
+    
     
 }
 .background{
     background-image:url(image/background\ wallpaper2.jpg) ;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
+    height: 100vh;
 }
 .container{
     width: 85%;
