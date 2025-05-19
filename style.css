@@ -9,12 +9,12 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
-    height: 100vh;
+    
 }
 .container{
     width: 85%;
     margin: auto;
-    
+    height: 100vh;
 }
 
 .header{
