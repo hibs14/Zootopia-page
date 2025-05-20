@@ -175,8 +175,8 @@ footer{
     }
     .container{
         width: 100%;
-        padding: 15px ;
         height: 100vh;
+        padding: 0px;
     }
     .header{
         margin: auto;
@@ -202,5 +202,14 @@ footer{
     }  
     footer{
         margin: auto;
+    }
+}
+@media(max-width:700px){
+    .container{
+        margin: 0px;
+    }
+    footer{
+        align-items: center;
+        width: 80%;
     }
 }
